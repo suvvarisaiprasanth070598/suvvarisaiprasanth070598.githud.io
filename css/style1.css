@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body{
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    color: #555;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))),url(images/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg);
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+
+.row{
+    max-width: 11400px;
+    margin: 0 auto; 
+    text-align: center;
+    
+}
+section{
+    padding: 80px 0;
+}
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h2 {
+    margin-bottom:30px;
+    text-align: center;
+     font-size: 180%;
+    word-spacing: 2px;
+     letter-spacing: 1px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    content: " ";
+    background-color:#3498db;
+    width: 100px;
+    margin-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%; 
+    left: 5%;
+    right: 5%;
+    bottom: 50%;
+}
+
+.button1:link,
+.button1:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    border: 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.button1:hover,
+button1:active{
+    background-color: #144d73;
+    
+}
+
+.button-full:link,
+.button-full:visited{
+    background-color:#3498db;
+    border: 1px solid;
+    color: #ffffff
+}
+.button-gost:link,
+.button-gost:visited{
+    border: 1px solid;
+    border-color: #3498db;
+    color: #ffffff;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+
+.navigation {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.navigation li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px
+}
+.navigation li a:link,
+.navigation li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+.navigation li a:hover,
+.navigation li a:active{
+    border-bottom: 2px solid #3498db
+}
+.sticky{
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255 , 255 , 0.8);
+    box-shadow: 0 2px 2px #c4c1c1;
+    z-index: 9999;
+}
+.navigatin{
+    margin-top: 1px;
+}
+.sticky .navigation li a:link,
+.sticky .navigation li a:visited{
+   padding: 5px 0;
+    color: #555;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #3498db;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #3498db;
+    -webkit-transition:border-bottom 0.2s ,color 0.2s;
+    transition:border-bottom 0.2s ,color 0.2s;
+}
+a:hover,
+a:active{
+
+    border-bottom: 2px solid #3498db ;
+    
+}
+
+/*--------------------*/
+/* easy use*/
+/*--------------------*/
+
+.section-easy{
+    padding:5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0px;
+}
+
+.icon-big{
+    font-size: 350%;
+    display:block;
+    color: #3498db ;
+    margin-bottom: 10px;
+}
+
+.box{
+
+    padding: 1%;
+    
+}
+.box p{
+    line-height: 145%;
+    font-size: 90%;
+    
+    
+}
+
+section {
+    padding:100px 0px;    
+}
+/*--------------------*/
+/* trending section*/
+/*--------------------*/
+
+
+.trending{
+    
+    margin:50px 0px 30px 0px;
+    text-align: center;
+}
+.trend{
+    list-style: none;
+    width:100%;
+}
+.trend li{
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+.des{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.des img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.des img:hover{
+    -webkit-transform: scale(1.03 );
+    transform: scale(1.03 );
+    opacity: 1;
+}
+
+/*--------------------*/
+/* steps */
+/*--------------------*/
+
+
+.laptop{
+    width:80%;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+.work-step{
+text-align: left;
+    margin-left: 2%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.step-sec{
+
+    background-color: #efefef;
+}
+.step-box{
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.step-box:first-child{
+ text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+step-box:last-child{
+ padding: 3%;
+    margin-top: 0px;
+}
+.button-app{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background-color: #000;
+}
+.work-step div{
+    color:#3498db ;
+    border: 2px solid #3498db ;
+    display:inline-block;
+    border-radius: 55%;
+    height: 50px;
+    width: 50px;
+    text-align:center;
+    font-size: 160%;
+    padding: 1%;
+}
+.clearfix {zoom:1}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility:hidden;
+} 
+/*--------------------*/
+/* login form */
+/*--------------------*/
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border: 3px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+/*--------------------*/
+/* cities section */
+/*--------------------*/
+.section-cities{
+    display: inline-block;
+    width:100%;
+    
+}
+.about-branch{
+    text-decoration: none;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    color: #3498db;
+    text-align: center;
+    font-size:120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+/*--------------------*/
+/* user review */
+/*--------------------*/
+.testimonials{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.8)),to(rgba(0,0,0,0.8))),url(images/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg);
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+     position: relative;
+}
+blockquote:before{
+    content: "\201c";
+    display: block;
+    font-size: 400%;
+     position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+   
+    
+
+cite{
+    font-size: 90%;
+    font-style: italic;
+    line-height: 145%;
+}
+cite img{
+    border: 2px solid #3498db;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+/*--------------------*/
+/* footer */
+/*--------------------*/
+footer{
+    display: block;
+    background-color: #333;
+    font-size: 80%;
+    width: 100%;
+    padding: 50px;
+    float: left;
+    
+}
+.foot-nav {
+  
+    padding: 0px;
+    margin-right: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.social-nav{
+ 
+    padding-left:0px;
+    margin-left: 0px;
+    float: right;
+    list-style: none;
+     text-decoration: none;
+}
+.foot-nav li,
+.social-nav li {
+    display: inline-block;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.foot-nav:child-last,
+.social-nav:child-last {
+    margin-right: 30px;
+}
+.foot-nav li a:link,
+.foot-nav li a:visited,
+.social-nav li a:link,
+.social-nav li a:visited{
+    text-decoration: none;
+    border: 0;
+}
+.foot-nav li a:hover{
+     border-bottom: 2px solid #3498db ;
+}   
+/* .email{
+    text-align: left;
+    margin-left: 30px;
+    
+}
+.password{
+    text-align: left;
+    margin-left: 30px;
+}
+.check{
+     text-align: left;
+    margin-left: 580px;
+}
+.form{
+    background-color: #efefef;
+    padding: 50px;
+}
+.submit{
+    margin-top: 30px;
+}
+.submit a:link,
+.submit a:visited{
+    color: #3498db;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    padding: 10px 30px;
+    border-radius: 55px;
+    transition: border 0.2s;
+}
+.submit a:hover,
+.submit a:active{
+    border-bottom: 2px solid #3498db;
+    background-color: #3498db;
+    color:#ffffff;
+}
+*/
